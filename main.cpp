@@ -40,7 +40,12 @@ int main() {
                 arrtr.del(key);
                 system("cls");
                 break;
-            case '4'://выход из программы
+            case '4':
+                cin >> key;
+                arrtr.poisk(key);
+                arrtr.outputid(key);
+                break;
+            case '5'://выход из программы
                 return 0;
         }
     }
