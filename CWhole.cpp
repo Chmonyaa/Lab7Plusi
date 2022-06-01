@@ -41,3 +41,17 @@ void CWhole::output() {//вывод всех векторов
         cout << endl;
     }
 }
+void CWhole::outputid(int id) {
+    {
+        for (int i = 0; i < m_count; i++)
+            if (m_a[i]->checkid(id))
+                id = i;
+        float *arr = new float[3];
+        m_a[id]->getcord(arr);
+        cout << "x:" << arr[0] << " ";
+        cout << "y:" << arr[1] << " ";
+        cout << "z:" << arr[2] << " ";
+        cout << endl;
+
+    }
+}
