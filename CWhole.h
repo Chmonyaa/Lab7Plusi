@@ -14,4 +14,5 @@ public:
     bool add(float crd[3], int key); //добавление объекта
     int search(int id); // поиск объекта по ключу
     void output();
+    void outputid(int id);
 };
